@@ -6,7 +6,7 @@ FILE_DUMP = tmux-raw.txt
 
 .PHONY: all
 all : $(FILE_IN)
-	rst2html --language=ja $(FILE_IN) $(FILE_OUT)
+	rst2html --language=ja --title='Manpage of TMUX' $(FILE_IN) $(FILE_OUT)
 
 .PHONY: clean
 clean:
